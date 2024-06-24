@@ -434,7 +434,7 @@ section .title::after {
 
 /* WORKS */
 .works {
-    color: #111;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
