@@ -89,3 +89,28 @@ $(document).ready(function () {
     });
 
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const experienceItems = document.querySelectorAll(".experience-item");
+    
+    function checkViewport() {
+        experienceItems.forEach(item => {
+            const rect = item.getBoundingClientRect();
+            const isVisible = (rect.top >= 0 && rect.bottom <= window.innerHeight);
+            
+            if (isVisible) {
+                item.classList.add("animate");
+            }
+        });
+    }
+
+    // Initial check when page loads
+    checkViewport();
+
+    // Check again when user scrolls
+    window.addEventListener("scroll", checkViewport);
+});
