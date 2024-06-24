@@ -275,6 +275,8 @@ section .title::after {
 
 
 
+
+
 /* ABOUT ME */
 .about .title::after {
     content: "| Education & Skills |";
@@ -333,6 +335,110 @@ section .title::after {
 .text strong.blue-text {
     color: rgb(8, 101, 189);
 }
+
+
+
+
+
+
+
+
+/* Skills */
+
+.skills {
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    background: url("images/bg.jpg") no-repeat center;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+}
+
+.skills .max-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills .title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-item h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skill-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+@media (max-width: 1200px) {
+    .skills-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
